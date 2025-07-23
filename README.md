@@ -1,6 +1,6 @@
 # 💬 Chatbot template
 
-A simple Streamlit app that shows how to build a chatbot using OpenAI's GPT-3.5.
+A powerful Streamlit-based support assistant app that integrates with LangChain and Groq's LLM to help users manage support tickets using natural language. The assistant can create, update, search, delete, and list support tickets — all through conversational input.
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://support-assistant-zny4zdtganfq7nf4ukar9u.streamlit.app/)
 
