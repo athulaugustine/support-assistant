@@ -11,4 +11,4 @@ class Ticket(Base):
     subject = Column(String, nullable=False)
     description = Column(Text, nullable=False)
     status = Column(String, default="open")
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now())
