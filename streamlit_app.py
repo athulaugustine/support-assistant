@@ -4,7 +4,7 @@ from src.agent import get_agent
 import logging
 
 logger = logging.getLogger(__name__)
-
+logging.basicConfig(level=logging.INFO)
 st.title("💬 Support Assistant")
 groq_api_key = st.text_input("Groq API Key", type="password")
 if not groq_api_key:
