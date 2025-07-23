@@ -15,8 +15,7 @@ A powerful Streamlit-based support assistant app that integrates with LangChain 
 
 # 🧩 Project Structure
 
-📁 src/
-
+- 📁 src/
 - │ ├── agent.py # LangChain agent setup using Groq + tools
 - │ ├── crud.py # Ticket creation, deletion, update logic
 - │ ├── db.py # Database engine and session config
