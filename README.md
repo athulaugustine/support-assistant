@@ -34,13 +34,13 @@ streamlit_app.py # Streamlit UI logic
 # ⚙️ Installation
 
 Clone the repository
-
+  ```bash
   git clone https://github.com/your-username/support-assistant.git
   
   cd support-assistant
   
 Create a virtual environment and install dependencies
-
+  ```bash
   python -m venv venv
   
   source venv/bin/activate  # On Windows: venv\Scripts\activate
