@@ -2,6 +2,7 @@
 
 A powerful Streamlit-based support assistant app that integrates with LangChain and Groq's LLM to help users manage support tickets using natural language. The assistant can create, update, search, delete, and list support tickets — all through conversational input.
 
+# 🖥️ App Preview
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://support-assistant-zny4zdtganfq7nf4ukar9u.streamlit.app/)
 
 # 🚀 Features
@@ -10,8 +11,6 @@ A powerful Streamlit-based support assistant app that integrates with LangChain 
   - Groq LLM Integration: Powered by the LLaMA 3.3-70B model via Groq API. 
   - LangChain Agents: Uses langgraph with React-style agents and tool calling.
   - Persistent Storage: Tickets are stored in a local SQLite database.
-
-# 🖥️ App Preview
 
 # 🧩 Project Structure
 
