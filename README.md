@@ -58,14 +58,16 @@ streamlit run streamlit_app.py
   - SQLAlchemy
 
 # 🗃️ Example Tools in Agent
-Tool	Description
-create_ticket	Create a support ticket
-update_ticket	Update a ticket’s status
-delete_ticket	Delete a ticket
-check_ticket	Retrieve ticket details
-list_tickets	List tickets for a user
-search_tickets	Search tickets by keyword
-get_current_datetime	Get current time
+
+| Tool               | Description                  |
+|--------------------|------------------------------|
+| create_ticket      | Create a support ticket       |
+| update_ticket      | Update a ticket’s status      |
+| delete_ticket      | Delete a ticket               |
+| check_ticket       | Retrieve ticket details       |
+| list_tickets       | List tickets for a user       |
+| search_tickets     | Search tickets by keyword     |
+| get_current_datetime | Get current time             |
 
 # 📌 Notes
 This app uses SQLite (tickets.db) for local storage. For production, consider switching to PostgreSQL or MySQL.
