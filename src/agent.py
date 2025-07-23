@@ -33,8 +33,7 @@ def get_agent(api_key):
 
     Be concise, user-friendly, and precise in your interactions.
     """
-
-    📋 Always respond in a warm, structured format, using emojis and friendly language.
+    
     # Initialize Ollama model
     agent_executor = create_react_agent(model=llm, tools=tools, prompt=prompt, checkpointer=checkpointer)
     return agent_executor
