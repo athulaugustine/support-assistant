@@ -1,6 +1,10 @@
 import streamlit as st
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from src.agent import get_agent
+import logging
+
+logger = logging.getLogger(__name__)
+
 st.title("💬 Support Assistant")
 groq_api_key = st.text_input("Groq API Key", type="password")
 if not groq_api_key:
@@ -42,6 +46,7 @@ else:
             response_text = ""
             response_area = st.empty()
             for chunk in st.session_state.agent.stream({"messages": [{"role": "user", "content": prompt}]},stream_mode="updates", config= st.session_state.config):
+                logger.info(chunk)
                 if 'agent' in chunk:
                     response_text += chunk['agent']['messages'][-1].content
                 elif 'tools' in chunk:
