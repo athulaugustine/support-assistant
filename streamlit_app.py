@@ -4,7 +4,14 @@ from src.agent import get_agent
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)
+logger.setLevel(logging.INFO)
+# Prevent duplicate handlers during reloads (common in Streamlit)
+if not logger.handlers:
+    handler = logging.StreamHandler()
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(name)s - %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+
 st.title("💬 Support Assistant")
 groq_api_key = st.text_input("Groq API Key", type="password")
 if not groq_api_key:
