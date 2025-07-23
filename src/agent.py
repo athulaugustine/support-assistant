@@ -1,13 +1,10 @@
 from langchain_groq import ChatGroq
-from dotenv import load_dotenv
 from langgraph.prebuilt import create_react_agent
 from src.crud import (
     create_ticket, update_ticket, delete_ticket,
     check_ticket, list_tickets, search_tickets, get_current_datetime
 )
 from langgraph.checkpoint.memory import InMemorySaver
-
-load_dotenv()
 
 def get_agent(api_key):
     tools = [create_ticket, update_ticket, delete_ticket,check_ticket, list_tickets, search_tickets, get_current_datetime]
