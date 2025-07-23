@@ -20,11 +20,11 @@ A simple Streamlit app that shows how to build a chatbot using OpenAI's GPT-3.5.
 🧩 Project Structure
 
 📁 src/
-│   ├── agent.py        # LangChain agent setup using Groq + tools
-│   ├── crud.py         # Ticket creation, deletion, update logic
-│   ├── db.py           # Database engine and session config
-│   └── models.py       # SQLAlchemy models
-streamlit_app.py        # Streamlit UI logic
+│ ├── agent.py # LangChain agent setup using Groq + tools
+│ ├── crud.py # Ticket creation, deletion, update logic
+│ ├── db.py # Database engine and session config
+│ └── models.py # SQLAlchemy models
+streamlit_app.py # Streamlit UI logic
 
 ⚙️ Installation
 
