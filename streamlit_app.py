@@ -2,7 +2,7 @@ import streamlit as st
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from src.agent import get_agent
 st.title("💬 Support Assistant")
-groq_api_key = st.text_input("OpenAI API Key", type="password")
+groq_api_key = st.text_input("Groq API Key", type="password")
 if not groq_api_key:
     st.info("Please add your Groq API key to continue.", icon="🗝️")
 else:
