@@ -61,11 +61,11 @@ streamlit run streamlit_app.py
 
 
 # 🧠 Powered By
-  Streamlit
-  LangChain
-  LangGraph
-  Groq LLM
-  SQLAlchemy
+  1. Streamlit
+  2. LangChain
+  3. LangGraph
+  4. Groq LLM
+  5. SQLAlchemy
 
 # 🗃️ Example Tools in Agent
 Tool	Description
