@@ -42,7 +42,6 @@ else:
             response_text = ""
             response_area = st.empty()
             for chunk in st.session_state.agent.stream({"messages": [{"role": "user", "content": prompt}]},stream_mode="updates", config= st.session_state.config):
-                print(chunk)
                 if 'agent' in chunk:
                     response_text += chunk['agent']['messages'][-1].content
                 elif 'tools' in chunk:
