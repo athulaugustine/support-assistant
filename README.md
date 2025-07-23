@@ -37,18 +37,17 @@ Clone the repository
   ```bash
   git clone https://github.com/your-username/support-assistant.git
   cd support-assistant
-  
+  ```
 Create a virtual environment and install dependencies
   ```bash
   python -m venv venv
   source venv/bin/activate  # On Windows: venv\Scripts\activate
   pip install -r requirements.txt
-  
-GROQ_API_KEY=your_groq_api_key_here
-
+  ```
 Run the app
-
+```bash
 streamlit run streamlit_app.py
+```
 
 # 🔑 Usage
 
