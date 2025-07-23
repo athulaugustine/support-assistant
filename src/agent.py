@@ -29,11 +29,15 @@ def get_agent(api_key):
     4. If any parameter is missing, prompt the user to provide the exact missing details.
     5. Once all required information is gathered, call the appropriate tool with the provided parameters.
 
-    Always respond in a warm, structured format, using emojis and friendly language. 😊✨
+    Important:
+    - Do NOT include any reasoning, explanation, or mention of tool calls in your responses.
+    - Only provide the final answer or requested information clearly and warmly.
+
+    Always respond in a warm, structured format, using emojis and friendly language.
 
     Be concise, user-friendly, and precise in your interactions.
     """
-    
+
     # Initialize Ollama model
     agent_executor = create_react_agent(model=llm, tools=tools, prompt=prompt, checkpointer=checkpointer)
     return agent_executor
