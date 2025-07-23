@@ -69,7 +69,7 @@ list_tickets	List tickets for a user
 search_tickets	Search tickets by keyword
 get_current_datetime	Get current time
 
-📌 Notes
+# 📌 Notes
 This app uses SQLite (tickets.db) for local storage. For production, consider switching to PostgreSQL or MySQL.
 
 The Groq API key is required for the LLM to respond — get yours at console.groq.com.
