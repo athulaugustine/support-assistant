@@ -34,14 +34,21 @@ streamlit_app.py # Streamlit UI logic
 # ⚙️ Installation
 
 Clone the repository
+
   git clone https://github.com/your-username/support-assistant.git
+  
   cd support-assistant
+  
 Create a virtual environment and install dependencies
+
   python -m venv venv
+  
   source venv/bin/activate  # On Windows: venv\Scripts\activate
+  
   pip install -r requirements.txt
   
 GROQ_API_KEY=your_groq_api_key_here
+
 Run the app
 
 streamlit run streamlit_app.py
