@@ -1,4 +1,4 @@
-# 💬 Chatbot template
+# 💬 Support Assistant
 
 A powerful Streamlit-based support assistant app that integrates with LangChain and Groq's LLM to help users manage support tickets using natural language. The assistant can create, update, search, delete, and list support tickets — all through conversational input.
 <img width="1895" height="985" alt="image" src="https://github.com/user-attachments/assets/bb43319b-4cf2-4b98-a750-13964b2dafbe" />
